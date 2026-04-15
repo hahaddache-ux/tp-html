@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background: rgb(241, 229, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .qst{
+        background: white;
+        width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .qst{
+        display: none;
+    }
+    .qst.active{
+        display: block;
+    }
+    .end{
+        display: none;
+        font-weight: bold;
+        text-align: center;
+    }
+    .choice{
+        width: 100%;
+        text-align: left;
+        padding: 12px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        background: white;
+        border-radius: 5px;
+         cursor: pointer;
+        font-size: 14px;
+    }
+    .choice:hover {
+  background: #a57979;
+}

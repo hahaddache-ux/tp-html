@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>c'est quoi javascript</h1>
+    <p id="demo">c'est un langage de programmation</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML = 'hellew word'"
+    >
+      click me
+    </button>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p id="pp">
+      In this case JavaScript changes the value of the src (source) attribute of
+      an image.
+    </p>
+    <div>
+      <button onclick="let p = document.getElementById('pp'); p.style.fontSize = (p.style.fontSize === '32px')?'16px':'32px'">
+        change la taille
+      </button>
+      
+    </div>
+    <!---->
+    <div style="margin: 23px;">
+        <button onclick="document.getElementById('mg').src = 'mg2.gif'  ">
+      turn on
+    </button>
+    <img id="mg" src="mg1.gif" style="width: 100px"/>
+    <button onclick="document.getElementById('mg').src = 'mg1.gif'">
+      turn on
+    </button>
+    </div>
+    <div>
+        <p id="d">c'est un langage de programmation</p>
+    <button
+      
+      onclick="let pp = document.getElementById('d');pp.style.visibility=(pp.style.visibility==='hidden')?'visible':'hidden'"
+    >
+      click me
+    </button>
+    </div>
+    
+  </body>
+</html>

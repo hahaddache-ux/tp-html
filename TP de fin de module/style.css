@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #e4b2a6, #cfccd3, #b4c6d8);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.desktop {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: calc(100vh - 50px);
+}
+
+.icon {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.icon:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.icon img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 4px;
+}
+
+.icon p {
+    color: #1a1a1a;
+    font-size: 12px;
+    text-shadow: 0px 1px 2px rgba(255,255,255,0.5);
+}
+
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    z-index: 1000;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.start-btn, .task-icon {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    background: rgba(255,255,255,0.5);
+}
+
+.start-btn:hover, .task-icon:hover {
+    background: rgba(255,255,255,0.9);
+}
+
+.search {
+    background: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #555;
+    width: 160px;
+    border: 1px solid rgba(0,0,0,0.1);
+    cursor: text;
+    transition: 0.3s;
+    outline: none;
+}
+
+.search:focus {
+    width: 220px;
+    border-color: #888;
+    background: #f9f9f9;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.clock {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1a1a1a;
+}

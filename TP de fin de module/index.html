@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mini Windows UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="icon" onclick="openApp('Ce PC')">
+        <img src="pc.png" alt="PC" />
+        <p>Ce PC</p>
+      </div>
+
+      <div class="icon" onclick="openApp('Documents')">
+        <img src="document.png" />
+        <p>Documents</p>
+      </div>
+
+      <div class="icon" onclick="openApp('Corbeille')">
+        <img src="corbeille.png" />
+        <p>Corbeille</p>
+      </div>
+
+      <div class="icon" onclick="openApp('Edg')">
+        <img src="edg.png" />
+        <p>Edg</p>
+      </div>
+
+      <div class="icon" onclick="openApp('Control Panel')">
+        <img src="control panel.png" />
+        <p>Control Panel</p>
+      </div>
+    </div>
+
+    <div class="taskbar">
+      <div class="center">
+        <div class="start-btn" onclick="startMenu()">🪟</div>
+        <input type="text" class="search" placeholder="🔍 Rechercher..." />
+        <div class="task-icon" onclick="openApp('Explorateur de fichiers')">
+          📁
+        </div>
+      </div>
+
+      <div class="right">
+         <span class="lang">FR</span>
+        <span class="wifi">📶</span>
+        <span class="clock" id="clock"></span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

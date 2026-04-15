@@ -1,0 +1,153 @@
+body{
+    margin: 0px;
+    font-family: "Tajawal",sans-serif;
+}
+.header{
+    width: 100%;
+    height: 350px;
+    background: red;
+    overflow: hidden;
+    border-bottom: 10px solid #087A79;
+}
+#header-imge{
+    width: 100%;
+    position: relative;
+    bottom:300px;
+    filter: brightness(50%); 
+}
+.menu-header{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top:0px;
+    direction: rtl;
+
+}
+#menu{
+    margin-right: 10px;
+    margin-top: 20px;
+}
+#menu > .btn{
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    transform: background 0.3s;
+}
+.active{
+    background: teal;
+    padding: 5px;
+    border-radius: 10px;
+}
+#menu > .btn:hover{
+       background: rgba(88,88,88,0.5);
+}
+#main-content{
+    position: relative;
+    width:100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:-270px
+}
+#img-fram{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #087A79;
+    border-radius: 50%;
+    margin: 0px auto;
+    box-shadow: 0px 9px 8px #c7c7c7;
+    transition: box-shadow 0.2s,padding 0.4s ;
+}
+#img-fram > img{
+    height: 100%;
+}
+#centered-content{
+    text-align: center;
+    color: white;
+    font-size: 29px;
+    
+}
+#img-fram:hover{
+    box-shadow: 0px 9px 8px #959595;
+    padding: 15px;
+}
+#main-body{
+    position: relative;
+    top:-200px;
+}
+#main-body > #main-header > h1{
+    font-weight: 400;
+
+}
+#main-body > #main-header {
+    text-align: center;
+    font-size:18px ;
+    color: #6b6b6b;
+}
+#features, #courses{
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.feature, .course{
+    margin: 0px 50px;  
+    background: rgb(221,221,221);
+    width: 300px;
+    text-align: center;
+    color: #087A79;
+}
+.course > img {
+    height: 100px;
+}
+.course{
+    background: transparent;
+    display: flex;
+    border: 1px solid #585858;
+    margin: 0px 30px;
+    border-radius: 10px;
+    width: 30%;
+    font-size: 10px;
+    box-shadow: 0px 2px 8px rgb(219,219,219);
+    
+}
+.course  h2 {
+    margin-right: 8px;
+    color: rgb(104,104,104);
+    font-weight: 500;
+} 
+
+#courses-section{
+    margin-top: 150px;
+    background: rgb(235,235,235);
+    padding: 20px 0px;
+    direction: rtl;
+}
+.course button{
+    background: #0D7A79;
+    border: none;
+    color: white;
+    height: 30px;
+    width: 90px;
+    font-family: 'Tajawal',sans-serif;
+    box-shadow: 0px 2px 8px rgb(143,143,143);
+}
+#courses-section > h1{
+    margin-right: 30px;
+    font-size: 40px;
+    font-weight: 500;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: white;
+    background: #0D7A79; 
+} 
+#footer h5{
+    font-weight: 400;
+}
